@@ -18,12 +18,14 @@ where y hat is the natural log of the predicted revenue for a customer and y is 
 
 ### Source
 
-- You will need to download train.csv and test.csv. These contain the data necessary to make predictions for each fullVisitorId listed in sample_submission.csv.
+- You will need to download **train.csv** and **test.csv**. These contain the data necessary to make predictions for each fullVisitorId listed in sample_submission.csv. All information below pertains to the data in CSV format.
+
 Download here (https://www.kaggle.com/c/10038/download-all)
-All information below pertains to the data in CSV format.
+
+
 
 ### Format
-Both train.csv and test.csv contain the columns listed under Data Fields. Each row in the dataset is one visit to the store. 
+Both **train.csv** and **test.csv** contain the columns listed under **Data Fields**. Each row in the dataset is one visit to the store. 
 
 ### What am I predicting
 We are predicting the natural log of the sum of all transactions per user. For every user in the test set, the target is:
@@ -34,7 +36,9 @@ We are predicting the natural log of the sum of all transactions per user. For e
 
 ### File Descriptions
 **train.csv** - the training set
+
 **test.csv** - the test set
+
 **sampleSubmission.csv** - a sample submission file in the correct format. Contains all fullVisitorIds in **test.csv**.
 
 ### Data Fields
@@ -59,6 +63,7 @@ We are predicting the natural log of the sum of all transactions per user. For e
 **visitId** - An identifier for this session. This is part of the value usually stored as the utmb cookie. This is only unique to the user. For a completely unique ID, you should use a combination of fullVisitorId and visitId.
 
 **visitNumber** - The session number for this user. If this is the first session, then this is set to 1.
+
 **visitStartTime** - The timestamp (expressed as POSIX time).
 
 ### Removed Data Fields
